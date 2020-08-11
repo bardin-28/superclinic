@@ -1,0 +1,138 @@
+/* 992 - 1200 px [Laptop]*/
+@media screen and (max-width: 1200px) {}
+
+/* 768 - 992 px [Tablet]*/
+@media screen and (max-width: 992px) {
+    .header-menuMobBlock {
+        display: block;
+    }
+
+    .header-Section {
+
+        .header-menu,
+        .header-singUp {
+            display: none;
+        }
+    }
+
+    .main-directions-section {
+        .directions-content {
+            p {
+                width: 300px;
+            }
+
+            .tabs-contentImg {
+                width: 300px;
+            }
+        }
+    }
+}
+
+/* 576px - 768px [Large Mobile]*/
+@media screen and (max-width: 768px) {
+    .main-offerCont-section {
+        .contactsNumbers {
+            padding: 0px 30px;
+        }
+    }
+
+    .main-directions-section {
+        .directions-content {
+            &>div.active {
+                display: block;
+                text-align: center;
+
+                h3 {
+                    margin-top: 20px;
+                }
+
+                p {
+                    margin: 0 auto;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+
+                .tabs-contentImg {
+                    margin: 0 auto;
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}
+
+/* 480px - 576px [Medium Mobile]*/
+@media screen and (max-width: 576px) {
+    .main-offerCont-section {
+        .contactsNumbers {
+            padding: 0 19px
+        }
+    }
+}
+
+/* 320px - 479px [Small Mobile]*/
+@media screen and (max-width: 479px) {
+    .header-Section {
+        .header-menuMobile {
+            ul {
+                width: 280px;
+            }
+        }
+    }
+
+    .main-offerSection {
+        .main-offer-title {
+            width: 280px;
+
+            h1 {
+                font-size: 36px;
+            }
+        }
+    }
+
+    .main-offerCont-section {
+        .main-offerContacts {
+            display: block;
+            text-align: center;
+
+            &>div {
+                margin-top: 25px;
+            }
+
+            &>div:last-of-type {
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    .main-directions-section {
+        .directions-title {
+            width: 280px;
+        }
+
+        .directions-caption {
+            display: block;
+
+            .directions-massage {
+
+                &::after,
+                &::before {
+                    display: none;
+                }
+            }
+
+            &>div {
+                margin: 0 auto;
+                margin-bottom: 25px;
+            }
+
+            &>div:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+
+        .tabs-contentImg {
+            width: 280px !important;
+        }
+    }
+}
